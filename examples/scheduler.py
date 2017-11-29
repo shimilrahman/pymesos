@@ -26,6 +26,9 @@ class MinimalScheduler(Scheduler):
     def registered(self, driver, frameworkId, masterInfo):
         print("registered")
 
+    def reregistered(self, driver, masterInfo):
+        print("rerererererereeeeeeeekkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk")
+
     def resourceOffers(self, driver, offers):
         filters = {'refuse_seconds': 5}
 
