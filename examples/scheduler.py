@@ -23,6 +23,8 @@ class MinimalScheduler(Scheduler):
 
     def __init__(self, executor):
         self.executor = executor
+    def registered(self, driver, frameworkId, masterInfo):
+        print("registered")
 
     def resourceOffers(self, driver, offers):
         filters = {'refuse_seconds': 5}
